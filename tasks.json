@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "description": "Code",
+    "status": "To Do"
+  },
+  {
+    "id": 2,
+    "description": "Code and Debug",
+    "status": "In progress"
+  },
+  {
+    "id": 3,
+    "description": "Research",
+    "status": "In progress"
+  },
+  {
+    "id": 4,
+    "description": "Lunch",
+    "status": "Done"
+  }
+]
