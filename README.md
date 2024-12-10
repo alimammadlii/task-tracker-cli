@@ -4,10 +4,10 @@ A task management CLI tool to track tasks with statuses, descriptions, add new t
 ## Installation
 ```
 # Clone the repository
-git clone https://github.com/your-username/your-repository-name.git```
+git clone https://github.com/alimammadlii/task-tracker-cli.git
 
 ## Navigate to the project directory
-cd your-repository-name```
+cd task-tracker-cli
 
 ## Install dependencies
 npm install
