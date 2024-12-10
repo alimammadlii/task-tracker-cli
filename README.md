@@ -1,5 +1,5 @@
 # Task Tracker
-A task management CLI tool to track tasks with statuses, descriptions, add new tasks, update and delete them.
+A task management CLI tool to track tasks with statuses and descriptions. User can add new tasks, update and delete them.
 
 ## Installation
 ```
@@ -21,7 +21,7 @@ node index.js add "Task description"
 # List all tasks
 node index.js list
 
-# List tasks with speciied status( todo, in-progress, done)
+# List tasks with specified status( todo, in-progress, done)
 node index.js list todo
 
 # Delete a task with task id 
