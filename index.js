@@ -83,20 +83,20 @@ if (args[0] === 'add' && args[1]) {
 else if (args[0] === 'list') {
     const tasks = readTasks();
     if (!args[1]) {
-        console.log(tasks);
+        console.table(tasks);
     }
     else{
         if (args[1] === 'done') {
             const done = tasks.filter(task => task.status === 'Done');
-            console.log(done);
+            console.table(done);
         }
         else if (args[1] === 'in-progress') {
             const inProgress = tasks.filter(task => task.status === 'In progress')
-            console.log(inProgress);
+            console.table(inProgress);
         }
         else if (args[1] === 'todo') {
             const todo = tasks.filter(task => task.status === 'To Do')
-            console.log(todo);
+            console.table(todo);
         }
     }
 }
@@ -105,21 +105,23 @@ else if (args[0] === "update" && args[1] && args[2]) {
     const task = tasks.find((task) => task.id = args[1]);
 
     task.description = args[2]
-    console.log(tasks);
+    console.table(tasks);
     fs.writeFileSync(filepath, JSON.stringify(tasks, null, 2));
 }
 else if (args[0] === 'mark-in-progress' && args[1]) {
     const taskId = parseInt(args[1], 10);
     markInProgress(taskId);
+    //This section marks a task as in-progress.
 }
 else if (args[0] === 'mark-done' && args[1]) {
     const taskId = parseInt(args[1], 10);
     markDone(taskId);
+    //This section marks a taks as done.
 }
 else if (args[0] === 'delete' && args[1]) {
     const taskId = parseInt(args[1], 10);
     deleteTask(taskId);
 }
 else {
-    console.log("Something went wrong");
-}   
+    console.log("You used undefined keyword. Please use one of these: add, delete,update, mark-in-progress, mark-done");
+}

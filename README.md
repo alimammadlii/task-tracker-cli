@@ -23,6 +23,8 @@ node index.js list
 
 # List tasks with specified status( todo, in-progress, done)
 node index.js list todo
+node index.js list in-progress
+node index.js list done
 
 # Delete a task with task id 
 node index.js delete 1
